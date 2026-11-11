@@ -58,8 +58,8 @@ The exact dependency versions are specified in `requirements.txt`.
 Clone the repository and navigate into its directory:
 
 ```bash
-git clone https://github.com/syd-xo/DataBuddies.git
-cd ../../DataBuddies
+git clone https://github.com/syd-xo/DataBuddies.git Team-6-Data-Buddies
+cd Team-6-Data-Buddies
 ```
 
 Create and activate a virtual environment.
