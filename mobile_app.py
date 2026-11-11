@@ -1,6 +1,5 @@
 """Mobile web interface for the intent track. Serves the REAL trained model (artifacts/intent/model.joblib).
-Standard library plus the kit's own dependencies. Run: python mobile_app.py [--host 0.0.0.0] [--port 8501]
-Only load model files you created yourself (joblib is not safe for untrusted files)."""
+Standard library plus the kit's own dependencies. Run: python mobile_app.py [--host 0.0.0.0] [--port 8501]."""
 import argparse, json
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
