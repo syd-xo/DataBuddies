@@ -258,7 +258,8 @@ the author is held privately (see `SOURCE_LOG.md`). The file is shared publicly 
 evaluation of this submission only; it is not offered for redistribution or reuse.
 
 **Upstream:** MASSIVE label schema (label names only — no MASSIVE rows are in the
-contribution file). No Common Voice text is included.
+contribution file). No Common Voice text is included.  
+
 ---
 
 **Team 6 — Data Buddies**  
