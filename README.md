@@ -145,9 +145,6 @@ These files support the evaluation and error analysis documented in `QUALITY.md`
 ## 7. Repository Structure
 
 ```text
-## Repository structure
-
-```text
 Team-6-Data-Buddies/
 │
 ├── app.py                          # Streamlit demo UI
