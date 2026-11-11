@@ -7,6 +7,14 @@
 **Dataset size:** 250 original, human-authored utterances  
 **Team:** 6 — Data Buddies
 
+## Team members
+
+| # | Name | Role | Contributor code |
+|---|---|---|---|
+| 1 | Sydney Aisha | Model training, Streamlit app and demo | `T06-B` |
+| 2 | Poni Yokwe | Luganda data authorship; natural phrasing and label fit | `T06-A` |
+| 3 | Tiffany Wanjiru | Data plan, annotation guide, dataset card, source log, quality report, manifest | `T06-C` |
+
 ## 1. Project Overview
 
 This project develops a research prototype that identifies the intended action in a written Luganda request. It classifies each request into one of ten intent categories aligned with the MASSIVE intent label schema.
