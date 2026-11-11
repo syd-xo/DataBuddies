@@ -5,7 +5,7 @@
 | Team | 6 — Data Buddies |
 | Primary language | Luganda |
 | Track | A — Intent classification |
-| GitHub URL | [FILL after final push] |
+| GitHub URL | https://github.com/syd-xo/DataBuddies.git |
 | Frozen commit SHA | [FILL: output of `git rev-parse HEAD`] |
 | Tag | `submission-v1` |
 | Data counts | 250 total; 150 train / 50 dev / 50 test; 25 per intent |
