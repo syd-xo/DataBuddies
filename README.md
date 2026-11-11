@@ -237,7 +237,22 @@ The project focuses exclusively on **Track A — Intent Classification** using L
 
 It does not implement sentiment analysis or semantic parsing. It is a demonstration of intent recognition and request routing, not a complete virtual assistant or production-ready service.
 
+## 12. Licence and terms
+
+**Code:** The starter kit (`train.py`, `evaluate.py`, `validate.py`, `app.py`, `core.py`
+and templates) is distributed under the MIT License; the full text is in `LICENSE_CODE.txt`.
+Our own scripts (`build_contribution.py`, `fix_ids.py`) are released under the same MIT terms.
+Our documentation files (`.md`) are released under CC BY 4.0 unless stated otherwise.
+
+**Data (`data/contribution.csv`):** Not MIT. The Luganda utterances were authored by a
+Team 6 member and are used under `documented_contributor_permission` — written consent from
+the author is held privately (see `SOURCE_LOG.md`). The file is shared publicly for
+evaluation of this submission only; it is not offered for redistribution or reuse.
+
+**Upstream:** MASSIVE label schema (label names only — no MASSIVE rows are in the
+contribution file). No Common Voice text is included.
 ---
 
 **Team 6 — Data Buddies**  
 **Strathmore NLP Hub Datathon 2026**
+

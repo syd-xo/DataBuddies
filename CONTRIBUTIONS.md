@@ -26,6 +26,8 @@ AI tools were not used to generate the 250 Luganda utterances included in `data/
 
 No bulk automatic translation or AI-authored sentences were included as human-authored dataset contributions. The intent labels were assigned using the project's annotation guide and the MASSIVE-aligned label schema.
 
+AI tools also assisted with drafting the Python data-preparation scripts build_contribution.py and fix_ids.py. Their output was inspected line by line, and validate.py was run to confirm the resulting file passes structural validation (PASS: 250 records).
+
 AI assistance with documentation did not replace the team's responsibility for checking the accuracy of the project information or the reviewer's responsibility for checking the Luganda utterances.
 
 ## 4. Contributions not claimed by the team

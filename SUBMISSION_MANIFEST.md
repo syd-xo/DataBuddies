@@ -9,7 +9,7 @@
 | Frozen commit SHA | [FILL: output of `git rev-parse HEAD`] |
 | Tag | `submission-v1` |
 | Data counts | 250 total; 150 train / 50 dev / 50 test; 25 per intent |
-| Source licence/permission | `documented_contributor_permission` (evidence held privately) |
+| Source licence/permission | Code: MIT (`LICENSE_CODE.txt`); Data: `documented_contributor_permission` (private evidence, see `SOURCE_LOG.md`) |
 | Metric files | `artifacts/intent/test_metrics.json`, `artifacts/intent/per_label_report.csv`, `artifacts/intent/test_predictions.csv` |
 | Demo run instructions | `python -m streamlit run app.py` (see `README.md`) |
 | Demo recording | [FILL: link — 2–3 min; ≥3 successes, ≥2 failures explained, metrics shown] |
