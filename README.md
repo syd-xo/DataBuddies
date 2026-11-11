@@ -41,5 +41,5 @@ examples/: completed fictional teaching documents. Never copy their permission/e
 ## Scope and disclosure
 Intent describes requested action; sentiment describes opinion; limited semantic parsing adds slots. Sentiment is not emotion detection; semantic baseline is not a general text-to-SQL system. The slot baseline cannot extract unknown surface values reliably. Report failures on an explicit unseen-value test subset.
 Reuse and credit this starter code. Document other datasets, models, AI tools and changes. Keep private data/permission evidence out of public GitHub. Do not open untrusted joblib files.
-Use your own GitHub repo now. A final NLP Hub repository and submission process will be announced. Deadline:11 November 2026,11:59 p.m. EAT. Do not guess a submission URL.
+Use your own GitHub repo now. A final NLP Hub repository and submission process will be announced. Deadline:11 November 2026,11.59 p.m. EAT. Do not guess a submission URL.
 
