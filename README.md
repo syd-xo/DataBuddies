@@ -145,35 +145,53 @@ These files support the evaluation and error analysis documented in `QUALITY.md`
 ## 7. Repository Structure
 
 ```text
+## Repository structure
+
+```text
 Team-6-Data-Buddies/
 │
-├── app.py
-├── train.py
-├── evaluate.py
-├── validate.py
-├── requirements.txt
+├── app.py                          # Streamlit demo UI
+├── train.py                        # trains the intent classifier (dev split for tuning)
+├── evaluate.py                     # frozen test-set evaluation → writes artifacts/
+├── validate.py                     # structural validator (columns, splits, uniqueness)
+├── core.py                         # shared utilities imported by the above
+├── taxonomy.csv                    # label set used by the pipeline
+├── requirements.txt                # pinned dependencies
+├── LICENSE_CODE.txt                # code licence
+├── .gitignore
 │
 ├── data/
-│   └── contribution.csv
+│   └── contribution.csv            # 250 reviewed Luganda records (the contribution)
 │
 ├── artifacts/
 │   └── intent/
-│       ├── test_metrics.json
-│       ├── per_label_report.csv
-│       └── test_predictions.csv
+│       ├── test_metrics.json       # accuracy, macro-F1, majority baseline
+│       ├── per_label_report.csv    # per-label F1 + support
+│       └── test_predictions.csv    # real predictions → source of error analysis
 │
 ├── evidence/
-│   └── REVIEW_LOG.csv
+│   └── REVIEW_LOG.csv              # original review log (provenance)
 │
+├── templates/                      # starter-kit examples and practice fixtures
+│   ├── CHANGELOG.md                #   (kept for reference; NOT our contribution)
+│   ├── COMPLETED_*.md
+│   ├── NATURAL_DATA.md
+│   ├── NEXT_STEPS.md
+│   ├── TRACKS.md
+│   ├── sentiment_guidelines.md
+│   └── practice_*.csv
+│
+├── build_contribution.py           # REVIEW_LOG.csv → data/contribution.csv
+├── fix_ids.py                      # resolves the 50 duplicate record_id values
+│
+├── README.md                       # this file
 ├── DATA_PLAN.md
 ├── ANNOTATION_GUIDE.md
 ├── DATA_CARD.md
 ├── SOURCE_LOG.md
 ├── QUALITY.md
 ├── CONTRIBUTIONS.md
-├── SUBMISSION_MANIFEST.md
-│
-└── README.md
+└── SUBMISSION_MANIFEST.md
 ```
 
 The structure above describes the main project files and expected evaluation outputs.
