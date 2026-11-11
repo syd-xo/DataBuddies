@@ -146,7 +146,6 @@ These files support the evaluation and error analysis documented in `QUALITY.md`
 
 ```text
 Team-6-Data-Buddies/
-│
 ├── app.py                          # Streamlit demo UI
 ├── train.py                        # trains the intent classifier (dev split for tuning)
 ├── evaluate.py                     # frozen test-set evaluation → writes artifacts/
