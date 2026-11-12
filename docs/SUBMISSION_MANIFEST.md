@@ -14,7 +14,7 @@
 | Demo run instructions | `python mobile_app.py` (see `README.md`); open `http://127.0.0.1:8501` in a browser |
 | Demo recording | `https://youtu.be/PAHOlETQBy0` |
 | Known unresolved issues | `LG-LIS-023_2` label boundary may be arguable (see `docs/QUALITY.md` §4, row 4); left unchanged. No other unresolved issues. |
-| ZIP snapshot | [FILL: filename, same commit as above] |
+| ZIP snapshot | `Team06-DataBuddies-submission-v1.zip` (downloaded from the `submission-v1` tag on GitHub)  |
 
 ## Pre-submission checklist
 - [ ] `data/contribution.csv` validated (`PASS: 250 records`).
