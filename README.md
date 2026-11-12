@@ -57,14 +57,14 @@ Related materials:
 
 ## Code and how to run
 
-The project uses Python 3.10 or later, scikit-learn, pandas and Streamlit.
+The project uses Python 3.10 or later, scikit-learn, and pandas.
 
 Relevant files:
 
 - `validate.py` — validates the contribution dataset.
 - `train.py` — trains the intent classifier.
 - `evaluate.py` — evaluates the trained model.
-- `app.py` — runs the Streamlit demo.
+- `mobile_app.py` — runs the custom web demo (uses Python's standard HTTP server).
 - `core.py` — contains shared project functionality.
 - `requirements.txt` — lists Python dependencies.
 
@@ -118,8 +118,10 @@ python evaluate.py --track intent --data data/contribution.csv
 Launch the demo:
 
 ```bash
-streamlit run app.py
+python mobile_app.py
 ```
+
+Once running, open `http://127.0.0.1:8501` in your web browser.
 
 Evaluation outputs are written under `artifacts/intent/`:
 
