@@ -6,13 +6,13 @@
 | Primary language | Luganda |
 | Track | A — Intent classification |
 | GitHub URL | https://github.com/syd-xo/DataBuddies.git |
-| Frozen commit SHA | [FILL: output of `git rev-parse HEAD`] |
+| Frozen commit SHA | `52b0deb52806f8b681d7dd2aaa99744d7c815b13` |
 | Tag | `submission-v1` |
 | Data counts | 250 total; 150 train / 50 dev / 50 test; 25 per intent |
 | Source licence/permission | Code: MIT (`LICENSE_CODE.txt`); Data: `documented_contributor_permission` (private evidence, see `SOURCE_LOG.md`) |
 | Metric files | `artifacts/intent/test_metrics.json`, `artifacts/intent/per_label_report.csv`, `artifacts/intent/test_predictions.csv` |
 | Demo run instructions | `python mobile_app.py` (see `README.md`); open `http://127.0.0.1:8501` in a browser |
-| Demo recording | `https://youtu.be/PAHOlETQBy0` — 2–3 min; ≥3 successes, ≥2 failures explained, metrics shown |
+| Demo recording | `https://youtu.be/PAHOlETQBy0` |
 | Known unresolved issues | `LG-LIS-023_2` label boundary may be arguable (see `docs/QUALITY.md` §4, row 4); left unchanged. No other unresolved issues. |
 | ZIP snapshot | [FILL: filename, same commit as above] |
 

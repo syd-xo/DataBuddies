@@ -10,7 +10,7 @@
 - **Working language/variety:** Luganda
 - **Track:** A — Intent classification
 - **Original team repository URL:** https://github.com/syd-xo/DataBuddies.git
-- **Full source commit SHA for the version submitted:** [Add full commit SHA]
+- **Full source commit SHA for the version submitted:** `52b0deb52806f8b681d7dd2aaa99744d7c815b13`
 
 ## Idea and approach
 
@@ -167,7 +167,7 @@ The dataset is relatively small, with only 25 examples per intent. The results t
 
 ## Presentation and demo video
 
-- **Presentation/demo video URL (REQUIRED):** https://youtu.be/PAHOlETQBy0
+- **Presentation/demo video URL (REQUIRED):** `https://youtu.be/PAHOlETQBy0`
 
 The presentation should introduce the idea and approach, demonstrate the trained model with new input, discuss the evaluation results and limitations, and explain each member's contribution. The video must be accessible to the judges.
 
@@ -182,7 +182,7 @@ The presentation should introduce the idea and approach, demonstrate the trained
 - **Evaluation outputs and baseline comparison:** `artifacts/intent/test_metrics.json`, `artifacts/intent/per_label_report.csv`, `artifacts/intent/test_predictions.csv`, and `docs/QUALITY.md`
 - **Runnable code and dependency file:** `validate.py`, `train.py`, `evaluate.py`, `mobile_app.py`, `core.py`, and `requirements.txt`
 - **Trained artefacts or reproduction instructions:** Run `train.py` and `evaluate.py` as described above.
-- **Video link:** https://youtu.be/PAHOlETQBy0
+- **Video link:** `https://youtu.be/PAHOlETQBy0`
 
 ## Attribution and permissions
 
