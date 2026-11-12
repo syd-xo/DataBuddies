@@ -4,9 +4,9 @@
 
 - **Team number and name:** Team 6 — Data Buddies
 - **Three members and their contributions (names/GitHub usernames only):**
-  - Poni Yokwe — Luganda data creation.
-  - Sydney Aisha — Model training, evaluation and Streamlit demo.
-  - Tiffany Wanjiru — Documentation, data preparation, quality checks and submission packaging.
+  - **Poni Yokwe** — Created and curated the 250 Luganda utterances.
+  - **Sydney Aisha** — Trained and evaluated the model and developed the web demo.
+  - **Tiffany Wanjiru** — Prepared the data, resolved ID issues, documented the project and packaged the submission.
 - **Working language/variety:** Luganda
 - **Track:** A — Intent classification
 - **Original team repository URL:** https://github.com/syd-xo/DataBuddies.git
