@@ -1,4 +1,4 @@
-# Dataset Card — Team 6 Luganda Intent Corpus v1.0
+# Dataset Card — Team 6 Luganda Intent Corpus v1
 
 ## 1. Dataset Overview
 
@@ -201,7 +201,7 @@ The original utterances were authored by one contributor. Independent review pro
 
 ### 8.4 Surface-Level Model Representation
 
-The starter baseline uses character-level TF-IDF for text representation.
+The starter baseline uses character-level TF-IDF (n-grams of length 2–5) as the text representation, paired with a Logistic Regression classifier.
 
 This approach captures surface patterns in written text but may fail to understand certain linguistic features, including negation, complex sentence structures and changes in meaning.
 
@@ -242,7 +242,7 @@ Additional annotation decisions are available in `ANNOTATION_GUIDE.md`.
 
 | Field | Value |
 |---|---|
-| Current Version | `v1.0` |
+| Current Version | `v1` |
 | Maintainers | Team 6 — Data Buddies |
 | Project Repository | See `README.md` |
 | Planned Updates | No further updates planned after submission. |
@@ -266,4 +266,4 @@ The following documents provide additional information about the corpus and its 
 ---
 
 **Team 6 — Data Buddies**  
-*Team 6 Luganda Intent Corpus v1.0 | Track A — Intent Classification*
+*Team 6 Luganda Intent Corpus v1 | Track A — Intent Classification*

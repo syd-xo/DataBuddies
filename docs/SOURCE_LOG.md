@@ -21,12 +21,12 @@ All 250 accepted utterances were originally authored by a team contributor. No d
 | `LG-LIS-*_2` — `lists_query` | `original_human` | `team_authored` | `v1` | `documented_contributor_permission` | Team private storage |
 | `LG-PLA-*` | `original_human` | `team_authored` | `v1` | `documented_contributor_permission` | Team private storage |
 | `LG-NEW-*` | `original_human` | `team_authored` | `v1` | `documented_contributor_permission` | Team private storage |
-| `LG-QAD-*` | `original_human` | `team_authored` | `v1` | `documented_contributor_permission` | Team private storage |
+| `LG-QA-*` | `original_human` | `team_authored` | `v1` | `documented_contributor_permission` | Team private storage |
 
 **Contributor:** `T06-A` — Poni Yokwe  
 **Reviewer:** `REV-LG-2026` — external fluent Luganda reviewer who did not author the reviewed records.
 
-The record ID prefixes and group assignments must be checked against `data/contribution.csv` before submission. In particular, confirm the prefixes used for `datetime_query`, `alarm_set`, `play_music`, `news_query`, and `qa_definition`. The `_2` suffix identifies records whose IDs were changed to resolve duplicates; it does not represent a different source or dataset version.
+The `_2` suffix identifies records whose IDs were changed to resolve duplicates; it does not represent a different source or dataset version.
 
 ## 3. Corrections log
 
@@ -36,21 +36,18 @@ The duplicate IDs were resolved using `fix_ids.py`. The second occurrence of eac
 
 | Record ID | Field | Original value | Corrected value | Reason | Reviewer | Date |
 |---|---|---|---|---|---|---|
-| `LG-LIS-024` (second occurrence) | `record_id` | `LG-LIS-024` | `LG-LIS-024_2` | Duplicate ID caused by a reused namespace. Text and label remained unchanged. | `REV-LG-2026` confirmed text and label | [FILL: correction date] |
-| [Add remaining examples, or reference the complete correction summary below] | | | | | | |
+| `LG-LIS-024` (second occurrence) | `record_id` | `LG-LIS-024` | `LG-LIS-024_2` | Duplicate ID caused by a reused namespace. Text and label remained unchanged. | `REV-LG-2026` confirmed text and label | 2026-11-11 |
 
 **Correction summary:** All 50 duplicate ID occurrences were resolved by `fix_ids.py` by assigning `_2` suffixes to the second occurrences. No text or label changes were made as part of this correction.
-
-The correction summary should be retained only if the script or correction evidence confirms that all 50 duplicate IDs were handled in this way.
 
 ## 4. Upstream resources and credit
 
 The project acknowledges the following resources:
 
 - **Starter kit v2.0:** Used as the project starter structure and validation framework. Refer to the starter kit README for its licence and attribution requirements.
-- **MASSIVE label schema:** Used as the reference for the ten intent label names. The project uses the label schema only; no MASSIVE dataset utterances are included in the team's contribution.
+- **MASSIVE label schema:** Used as the reference for the ten intent label names. The project uses the label schema only; no MASSIVE dataset utterances are included in the team's contribution.  
 
-Any additional resource should be listed here only if it was actually used in preparing the dataset, documentation, or implementation.
+No MASSIVE, Common Voice, AfriSenti, or KINNEWS records are included in `data/contribution.csv`.
 
 ## 5. Permission and evidence handling
 

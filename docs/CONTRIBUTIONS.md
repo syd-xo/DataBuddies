@@ -5,7 +5,7 @@
 | Member | Contributor code | Contribution | Evidence |
 |---|---|---|---|
 | Poni Yokwe | `T06-A` | Authored 250 Luganda utterances based on the provided English meaning prompts, using natural Luganda phrasing and applying the agreed intent-label boundaries. | `data/contribution.csv`, `evidence/REVIEW_LOG.csv` |
-| Sydney Aisha | `T06-B` | Set up the repository, trained the character TF-IDF and Logistic Regression baseline, prepared the model artifacts, and built and ran the Streamlit demonstration application. | `artifacts/intent/`, Streamlit demonstration application |
+| Sydney Aisha | `T06-B` | Set up the repository, trained the character TF-IDF and Logistic Regression baseline, prepared the model artifacts, and built and ran the  custom web demonstration application. | `artifacts/intent/`, mobile_app.py, mobile/index.html |
 | Tiffany Wanjiru | `T06-C` | Prepared the data plan, annotation guide, dataset card, source log, quality report, and submission manifest. Ran the dataset validator, resolved record ID collisions, and assembled the submission package. | `DATA_PLAN.md`, `ANNOTATION_GUIDE.md`, `DATA_CARD.md`, `SOURCE_LOG.md`, `QUALITY.md`, `SUBMISSION_MANIFEST.md`, `build_contribution.py`, `fix_ids.py` |
 
 ## 2. Independent reviewer contribution

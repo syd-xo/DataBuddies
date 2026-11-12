@@ -21,7 +21,7 @@ The team:
 2. Organised the data into training, development and test splits, and arranged independent review by a fluent Luganda speaker.
 3. Prepared and validated the contribution dataset, including resolving duplicate record IDs without changing the utterances or their labels.
 4. Trained a character-level TF-IDF and Logistic Regression classifier.
-5. Built a Streamlit demo to display predicted intents and illustrative responses.
+5. Built a custom web demo to display predicted intents and illustrative responses.
 
 The original contribution is the Luganda dataset, its review and the project-specific implementation. The project reuses the starter kit structure and MASSIVE-aligned intent labels.
 
@@ -167,9 +167,7 @@ The dataset is relatively small, with only 25 examples per intent. The results t
 
 ## Presentation and demo video
 
-- **Presentation/demo video URL (REQUIRED):** [Add accessible video URL]
-- **Optional second presentation/demo video:** Not provided.
-- **Optional hosted app URL:** Not provided.
+- **Presentation/demo video URL (REQUIRED):** https://youtu.be/PAHOlETQBy0
 
 The presentation should introduce the idea and approach, demonstrate the trained model with new input, discuss the evaluation results and limitations, and explain each member's contribution. The video must be accessible to the judges.
 
@@ -182,9 +180,9 @@ The presentation should introduce the idea and approach, demonstrate the trained
 - **Quality/review report:** `docs/QUALITY.md`
 - **Contribution and AI-use statement:** `docs/CONTRIBUTIONS.md`
 - **Evaluation outputs and baseline comparison:** `artifacts/intent/test_metrics.json`, `artifacts/intent/per_label_report.csv`, `artifacts/intent/test_predictions.csv`, and `docs/QUALITY.md`
-- **Runnable code and dependency file:** `validate.py`, `train.py`, `evaluate.py`, `app.py`, `core.py`, and `requirements.txt`
+- **Runnable code and dependency file:** `validate.py`, `train.py`, `evaluate.py`, `mobile_app.py`, `core.py`, and `requirements.txt`
 - **Trained artefacts or reproduction instructions:** Run `train.py` and `evaluate.py` as described above.
-- **Video link:** [Add accessible presentation/demo video URL]
+- **Video link:** https://youtu.be/PAHOlETQBy0
 
 ## Attribution and permissions
 

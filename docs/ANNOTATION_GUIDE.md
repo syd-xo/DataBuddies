@@ -15,7 +15,7 @@ The following rules were applied throughout the annotation process:
 1. **One Intent per Record:** Each utterance must express one clear and identifiable intent.
 2. **Meaning-Based Classification:** Labels are assigned according to the user's intended meaning rather than individual keywords.
 3. **No Forced Labels:** Unclear, unsupported or multi-intent examples are excluded rather than assigned an unsuitable label.
-4. **Exclusion Documentation:** Every excluded example must be documented in `QUALITY.md`, including the reason for exclusion.
+4. **Exclusion Documentation:**  Any excluded example must be documented in QUALITY.md with the reason. (In this dataset, no records were excluded — see QUALITY.md).
 5. **Consistent Label Boundaries:** Similar requests must be classified consistently according to the definitions and distinctions in this guide.
 
 ## 3. Intent Labels and Examples
@@ -133,7 +133,7 @@ Each record was assessed using three main criteria:
 
 Individual review decisions and disagreements were recorded in:
 
-`evidence/REVIEW_LOG.csv`
+`../evidence/REVIEW_LOG.csv`
 
 The overall findings and quality assessment are documented in:
 

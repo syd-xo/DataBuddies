@@ -51,9 +51,7 @@ The dataset was divided using a stratified approach to maintain equal representa
 
 ### 3.1 Leakage Prevention
 
-Related utterance variants were assigned a common `group_id` and kept within the same dataset split.
-
-This ensured that related examples did not appear across the training, development and testing sets, reducing the risk of data leakage.
+Each record was assigned its own unique group_id. The final dataset contains no duplicate or closely related utterance variants (0 duplicate texts verified), so no cross-split grouping was necessary.
 
 ### 3.2 Test Set Isolation
 

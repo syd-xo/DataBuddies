@@ -10,6 +10,8 @@
 ## 2. Review, disagreements and exclusions
 No records were excluded. All 250 candidate records were accepted after review; per-row reviewer decisions (text, label, notes) are recorded in `evidence/REVIEW_LOG.csv`.
 
+**One label flagged post-hoc:** `LG-LIS-023_2` was accepted as `lists_query` at review time, but post-evaluation analysis found the boundary arguable (see §4, row 4). Left unchanged in the test set.
+
 **Data-cleaning decisions:**
 - 50 duplicated `record_id` values were resolved by suffixing `_2` on the second occurrence (see `DATA_PLAN.md`). Text and labels unchanged.
 - No spellings were normalised; original Luganda apostrophes and diacritics preserved.
@@ -57,15 +59,18 @@ Three labels reach F1 = 1.00 (`alarm_set`, `play_music`, `qa_definition`). The w
 
 ## 4. Error analysis (all 5 real test errors)
 
-> Every row below is copied verbatim from `artifacts/intent/test_predictions.csv`. The model made exactly five errors on the 50-row test set.
+> Every row below is copied verbatim from `artifacts/intent/test_predictions.csv`.
+> Explanations and probabilities match the diagnostics in `mobile_app.py`, which
+> can be reproduced by running `python mobile_app.py` and clicking any error row.
+> The model made exactly five errors on the 50-row test set.
 
 | # | Record ID | Input (Luganda) | Expected | Predicted | Likely cause |
 |---|---|---|---|---|---|
-| 1 | `LG-WEA-021` | Waliwo okulabula ku mazzi ag'ennyandagala leero? | `weather_query` | `news_query` | The words `okulabula` (warning) and `mazzi` (water) likely triggered the news_query class, which often contains alerts. |
-| 2 | `LG-DAT-024` | Mbuuliraessaawa z'omu kitundu kino. | `datetime_query` | `news_query` | "Mbuulira" (tell me) is strongly associated with news. Additionally, the missing space in `Mbuuliraessaawa` (should be `Mbuulira essaawa`) confused the character n-grams. |
-| 3 | `LG-CAL-022_2` | Olukungaana lw'essaawe nnya mu makya lucyali ku kalenda? | `calendar_query` | `calendar_set` | Shared root `kalenda` (calendar). The model missed the cue `lucyali` (is it still there?), which implies reading an existing event, not creating one. |
-| 4 | `LG-LIS-023_2` | Esukaali yongereddwa ku lukalala lw'ebiyingira? | `lists_query` | `lists_createoradd` | Shared root `olukalala`. The verb `yongereddwa` (was added) triggered the "add" class, despite the sentence asking a question about a past action. |
-| 5 | `LG-LIS-024_2` | Laga olukalala lw'abagenyi b'olukungaana. | `lists_query` | `lists_createoradd` | The model saw `olukalala` (list) and defaulted to `lists_createoradd`, ignoring `Laga` (show/read), which clearly signals a query intent. |
+| 1 | `LG-WEA-021` | Waliwo okulabula ku mazzi ag'ennyandagala leero? | `weather_query` | `news_query` | Rare words (`okulabula`, `ennyandagala`) gave little weather evidence. Strongest n-grams were `ag'` and `ul`, which the model links to news. Probability 0.11 (correct) vs 0.15 (`news_query`) — near coin-flip. |
+| 2 | `LG-DAT-024` | Mbuuliraessaawa z'omu kitundu kino. | `datetime_query` | `news_query` | `Mbuulira` ("tell me") also opens news requests; the model keyed on `buul` / `lir` and underweighted `essaawa` (time), which is rare in training. The missing space in `Mbuuliraessaawa` compounds the error. |
+| 3 | `LG-CAL-022_2` | Olukungaana lw'essaawe nnya mu makya lucyali ku kalenda? | `calendar_query` | `calendar_set` | Both calendar intents share `kalenda`; the cue `lucyali ku kalenda` (is it still there?) is subtle for a character model. Probability 0.22 (`calendar_set`, chosen) vs 0.19 (`calendar_query`, correct). |
+| 4 | `LG-LIS-023_2` | Esukaali yongereddwa ku lukalala lw'ebiyingira? | `lists_query` | `lists_createoradd` | Shared root `olukalala`; `yongereddwa` ("was added") triggered the "add" class. **Label may be arguable** — sentence reads as both statement and question. Flagged for a second reviewer. |
+| 5 | `LG-LIS-024_2` | Laga olukalala lw'abagenyi b'olukungaana. | `lists_query` | `lists_createoradd` | `Laga` ("show") is the only cue for reading a list and is rare in training. `olukalala` is shared by both list intents, so the model fell back on add-to-list: 0.21 (`lists_createoradd`) vs 0.17 (`lists_query`). |
 
 ## 5. Limitations
 - **Small test set:** 5 examples per label. Each per-label F1 is a 5-item estimate; one flipped prediction moves F1 by ~0.05–0.10. Do not compare raw scores across teams or languages.
